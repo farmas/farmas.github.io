@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Skeleton Canvas for Eric</title>
+</head>
+
+<body>
+    <div style="text-align:center;font-size:large;">
+        <div style="margin-bottom: 10px;">
+            Skeleton canvas for Eric
+        </div>
+        <canvas id="game" width="820" height="420"></canvas>
+    </div>
+
+    <script>
+            var canvas = document.getElementById('game');
+            var ctx = canvas.getContext('2d');
+
+            ctx.lineCap = 'butt';
+            ctx.fillStyle = '#0000ff';
+            ctx.beginPath();
+            ctx.rect(100, 100, 20, 20);
+            ctx.fill();
+    </script>
+</body>
+
+</html>
