@@ -16,11 +16,17 @@
             var canvas = document.getElementById('game');
             var ctx = canvas.getContext('2d');
 
+            // draw a box
             ctx.lineCap = 'butt';
             ctx.fillStyle = '#0000ff';
             ctx.beginPath();
             ctx.rect(100, 100, 20, 20);
             ctx.fill();
+
+            // setup a timer
+            var timer = window.setInterval(function () { 
+                // tick!
+             }, 60);
     </script>
 </body>
 
