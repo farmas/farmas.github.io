@@ -20,8 +20,10 @@
             ctx.lineCap = 'butt';
             ctx.fillStyle = '#0000ff';
             ctx.beginPath();
-            ctx.rect(100, 100, 20, 20);
+            ctx.rect(100 /*x*/, 100 /*y*/, 50 /*w*/, 50/*h*/);
             ctx.fill();
+
+            console.log('HELLO THERE');
 
             // setup a timer
             var timer = window.setInterval(function () { 
